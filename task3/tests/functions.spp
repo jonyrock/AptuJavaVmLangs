@@ -1,0 +1,6 @@
+fun foo(a , b , c) {
+    a + b + c;
+}
+
+fun goo(a, b = 13) {
+}
