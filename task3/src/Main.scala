@@ -5,6 +5,5 @@ object Main extends App {
       |val b = {val c = {"hello"}}
     """.stripMargin
 //  val program ="""val a = {123} val c = {"12sadasdfsadf"}""".stripMargin
-  println(program)
-  ASTBuilder.buildAST(program)
+  println(ASTBuilder.buildAST(program).toString)
 }

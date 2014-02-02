@@ -1,5 +1,0 @@
-function foo() {
-    var x;
-    var z;
-    return 2;
-}
