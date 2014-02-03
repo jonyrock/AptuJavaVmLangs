@@ -225,11 +225,20 @@ object main extends App {
 
   val program =
     """
-      |def foo() {
-      | println("HER")
-      | 23
+      |def getMegaMult(x, y = 3, z = 12.0) {
+      | (x + y) * (x + y) + z
       |}
-      |println(foo())
+      |def printTwice(str) {
+      | println(str)
+      | println(str)
+      | "I've done it!"
+      |}
+      |println(getMegaMult(2, 4))
+      |var myvar = 2.0
+      |println(2 + myvar)
+      |var myvar = "Now Im not two"
+      |println(myvar)
+      |println(printTwice("hi"))
       |println(2 + 23)
       |var struct = {
       | var x = 1
